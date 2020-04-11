@@ -34,12 +34,5 @@ public class ProductController {
         return productService.getOne(id);
     }
 
-    @PostMapping("/products/order")
-    public Charge placeOrders(@RequestBody ProductOrderData productOrderData) {
-        Charge charges = productService.placeOrder(productOrderData);
-        System.out.println(charges);
-        return charges;
-    }
-
 
 }
