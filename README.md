@@ -2,7 +2,7 @@
 
 This application is used by the pet shop frontend application (https://github.com/Andriana95/pet-shop-react)
 
-###Setting up
+### Setting up
 In order to start the application, you need to provide correct datasource information.
 This is done in the `application.properties` file.
 
@@ -16,10 +16,10 @@ spring.datasource.password=admin
 ```
 The application uses `spring.jpa.hibernate.ddl-auto=update` so that the tables will be created automatically from the domain models.
 
-###Stripe
+### Stripe
 The application also uses Stripe, and the `stripe.pk` and `stripe.sk` are stored in the `application.properties` file as well (just for demo purposes, in real life, we should send them as ENV vars)
 
-###Application
+### Application
 The application will run on port 8080.
 
 There is a `@CrossOrigin(origins = "*", allowedHeaders = "*")` for the controllers, so that we can access it from anywhere. This is for DEMO purposes only.
