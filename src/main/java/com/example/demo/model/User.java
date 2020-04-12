@@ -15,7 +15,7 @@ public class User {
     private String name;
 
     @Column
-    private String streat;
+    private String street;
 
     @Column
     private String number;
